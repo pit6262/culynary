@@ -2122,6 +2122,11 @@ label {
         margin: 0 auto 3rem; }
     .mobile-menu__body {
       max-width: 32rem; }
+  .mm-menu__item {
+    padding-left: 4rem; }
+    .mm-menu__item:before {
+      font-size: 1.9rem;
+      top: .5rem; }
   .mm-links a {
     font-size: 1.6rem; }
   /* Main */
