@@ -12,13 +12,40 @@
 </head>
 <body class="loaded bg-loaded">
 <style>
+	.container {
+		position: relative;
+	}
 	.bg-loaded {background: #F1FBFF;}
 	.ld-header {
 		padding: 40px 0 ;
 		margin:  0 ;
+		position: relative;
 		border-bottom: .1rem solid #85989f;
+		margin-bottom: 70px;	
 	}
-	.main-links .wrapper {max-width: 1200px;padding: 40px;margin: 0 auto;}
+	.main-links {position: relative;}
+	.main-links:after {
+		content: '';
+		display: block;
+		position: absolute;
+		right: -.9rem;
+		top: 1.5rem;
+		background: url('../img/right-illustration.svg') no-repeat center;
+		background-size: contain;
+		width: 27.6rem;
+		height: 28.4rem;
+	}
+	.main-links:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: -4rem;
+		top: -.5rem;
+		background: url('../img/left-illustration.svg') no-repeat center;
+		background-size: contain;
+		width: 38.3rem;
+		height: 28.9rem;
+	}
 	.main-links ul {list-style: none; margin: 0; padding: 0;}
 	.main-links li 	{margin-bottom: 10px;}
 	.main-links a {display: inline-block; color: #540003;font-size: 16px;line-height: 20px; text-decoration: none; border-bottom: .1rem dashed #91CEE4}
@@ -36,24 +63,24 @@
 			</div>
 		</div>
 		<div class="container" >
-			<div style="border-top: .1rem solid #fff;">
-				<h4>Ссылки</h4>
-				<div class="ul-wrap">
-					<ul>
-						<li><a href="index.html">Главная </a></li>
-						<!-- <li><a href="about.html">О нас </a></li>
-						<li><a href="contacts.html">Контакты </a></li> -->
-					</ul>
-					
-				</div>
-
-				<!-- <h2>Попап</h2>
-				<div class="ul-wrap">
-					<ul>
-						<li><a href="index.html">Обратный звонок </a></li>
-					</ul>
-				</div> -->
+			
+			<h4>Ссылки</h4>
+			<div class="ul-wrap">
+				<ul>
+					<li><a href="index.html">Главная </a></li>
+					<!-- <li><a href="about.html">О нас </a></li>
+					<li><a href="contacts.html">Контакты </a></li> -->
+				</ul>
+				
 			</div>
+
+			<!-- <h2>Попап</h2>
+			<div class="ul-wrap">
+				<ul>
+					<li><a href="index.html">Обратный звонок </a></li>
+				</ul>
+			</div> -->
+			
 		</div>
 	</div>
 
