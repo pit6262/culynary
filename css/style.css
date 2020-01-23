@@ -896,14 +896,6 @@ img {
   min-height: 100vh;
   width: 100%; }
 
-.wrapper {
-  width: 100%;
-  min-width: 32rem;
-  max-width: 80.8rem;
-  padding: 0 2rem 0 2rem;
-  margin: 0 auto;
-  position: relative; }
-
 .main {
   width: 100%;
   min-width: 32rem;
@@ -1267,7 +1259,7 @@ img {
   to {
     height: 7rem;
     opacity: 1;
-    background: green; } }
+    background: #AEEAFF; } }
 
 @keyframes ball-a {
   from {
@@ -1277,7 +1269,7 @@ img {
   to {
     height: 7rem;
     opacity: 1;
-    background: green; } }
+    background: #AEEAFF; } }
 
 @-webkit-keyframes ball-b {
   from {
@@ -1287,7 +1279,7 @@ img {
   to {
     height: 6.5rem;
     opacity: 1;
-    background: yellow; } }
+    background: #3FB6EA; } }
 
 @keyframes ball-b {
   from {
@@ -1297,7 +1289,7 @@ img {
   to {
     height: 6.5rem;
     opacity: 1;
-    background: yellow; } }
+    background: #3FB6EA; } }
 
 @-webkit-keyframes ball-c {
   from {
@@ -1307,7 +1299,7 @@ img {
   to {
     height: 6rem;
     opacity: 1;
-    background: red; } }
+    background: #009AD0; } }
 
 @keyframes ball-c {
   from {
@@ -1317,7 +1309,7 @@ img {
   to {
     height: 6rem;
     opacity: 1;
-    background: red; } }
+    background: #009AD0; } }
 
 .btn, a.btn {
   position: relative;
