@@ -1190,11 +1190,21 @@ img {
   height: 3.5rem;
   line-height: 3.1rem;
   text-align: center;
-  padding: 0 2rem;
+  padding: 0 1.7rem 0 2rem;
   color: #fff;
   background: rgba(31, 180, 245, 0.8);
   box-shadow: 0px 0.5rem 0.7rem rgba(75, 75, 75, 0.5);
-  border: .2rem solid #61daff; }
+  border: .2rem solid #61daff;
+  border-right: none; }
+  .bd-tags:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -.2rem;
+    left: 100%;
+    background: url("../img/ribbon.png") no-repeat top left;
+    width: 1rem;
+    height: 3.5rem; }
 
 /* Video */
 /* Range  */
