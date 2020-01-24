@@ -249,242 +249,284 @@
 
 	<!-- BEGIN MAIN -->
 	<main class="main">
-		<section class="section pb0">
+		<section class="section">
 			<div class="container">
-				<div class="section__head">
-					<h2 class="section__title"><span class="sh-separate">Новые рецепты</span></h2>
-					<div class="cards-slider-pagination csp1"></div>
-				</div>
-				
-				
-			</div>
-			<div class="section-bg">
-				<div class="section-bg__img img1"><img src="img/il-1.svg" alt=""></div>
-				<div class="section-bg__img img2"><img src="img/il-2.svg" alt=""></div>
-				<div class="container">
-					<div class="cards-slider new-slider">
-						<div>
-							<article class="card">
-								<a href="#" class="card__link">
-									<div class="card__img" style="background-image: url('img/card-img1.jpg')">
-										<span class="bd-tags">Выпечка</span>
-									</div>
-									<div class="card__body">
-										<div class="card__head">
-											<div class="card__title">Дрожжевой пирог с абрикосами рецепты в духовке</div>
-										</div>
-									</div>
-								</a>
-							</article>
+				<div class="row">
+					<div class="col-xl-3 sidebar">
+						<div class="sidebar__title"><span class="sh-separate">Рубрикатор</span></div>
+						<div class="sidebar__nav">
+							<ul class="nav-rubric-l">
+								<li class="nav-rubric-l__item nr-dropdown is-active">
+									<a href="#" class="nav-rubric-l__link">Салаты / закуски <span class="num">2955</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li class="is-active"><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+										<li><a href="#">Экзотические салаты</a></li>
+										<li><a href="#">Салаты с ветчиной</a></li>
+										<li><a href="#">Закуски</a></li>
+										<li><a href="#">Гренки</a></li>
+										<li><a href="#">Бутерброды</a></li>
+										<li><a href="#">Паштеты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Приправы <span class="num">350</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li class="is-active"><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Первые блюда <span class="num">1245</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li class="is-active"><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Вторые блюда <span class="num">4285</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li class="is-active"><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Заготовка <span class="num">1033</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li class="is-active"><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Мучные изделия <span class="num">425</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li class="is-active"><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Напитки <span class="num">652</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li class="is-active"><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Десерты <span class="num">2351</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li class="is-active"><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Разное <span class="num">1427</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li class="is-active"><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+							</ul>
 						</div>
-						<div>
-							<article class="card">
-								<a href="#" class="card__link">
-									<div class="card__img" style="background-image: url('img/card-img2.jpg')">
-										<span class="bd-tags">Cалаты</span>
-									</div>
-									<div class="card__body">
-										<div class="card__head">
-											<div class="card__title">Овощной салат с сыром «Огни фейерверка»</div>
-										</div>
-									</div>
-								</a>
-							</article>
-						</div>
-						<div>
-							<article class="card">
-								<a href="#" class="card__link">
-									<div class="card__img" style="background-image: url('img/img.jpg')">
-										<span class="bd-tags">Cалаты</span>
-									</div>
-									<div class="card__body">
-										<div class="card__head">
-											<div class="card__title">Новогодний Салат 2020 "Дед Мороз и Компания"</div>
-										</div>
-									</div>
-								</a>
-							</article>
-						</div>
-						<div>
-							<article class="card">
-								<a href="#" class="card__link">
-									<div class="card__img" style="background-image: url('img/img.jpg')">
-										<span class="bd-tags">Cалаты</span>
-									</div>
-									<div class="card__body">
-										<div class="card__head">
-											<div class="card__title">Новогодний Салат 2020 "Дед Мороз и Компания"</div>
-										</div>
-									</div>
-								</a>
-							</article>
+						<div class="sidebar__title"><span class="sh-separate">Коллекции</span></div>
+						<div class="sidebar__nav">
+							<ul class="nav-rubric-l">
+								<li class="nav-rubric-l__item nr-dropdown ">
+									<a href="#" class="nav-rubric-l__link">Рождество <span class="num">145</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li><a href="#">Закуски</a></li>
+										<li><a href="#">Гренки</a></li>
+										<li><a href="#">Бутерброды</a></li>
+										<li><a href="#">Паштеты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Выпечка <span class="num">3457</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Постные блюда <span class="num">1344</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Пикник <span class="num">657</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Масленица <span class="num">1178</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Пикник <span class="num">597</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">День рождения <span class="num">425</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Заготовки <span class="num">2314</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Хэллоуин <span class="num">4271</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+								<li class="nav-rubric-l__item nr-dropdown">
+									<a href="#" class="nav-rubric-l__link">Кухни мира <span class="num">354</span></a>
+									<ul class="nav-rubric-dropdown">
+										<li><a href="#">Салаты</a></li>
+										<li><a href="#">Праздничные салаты</a></li>
+										<li><a href="#">Простые салаты</a></li>
+										<li><a href="#">Фруктовые салаты</a></li>
+									</ul>
+								</li>
+							</ul>
 						</div>
 					</div>
+					<div class="col-xl-9">
+						<div class="card-wrap">
+							<h1 class="card-wrap__title">Салат Цезарь с креветками</h1>
 
-					<div class="section__footer">
-						<span class="sf-separate">
-							<a href="#" class="btn btn--info btn--icon"><span class="icon-loading"></span> показать еще</a>
-						</span>
+							<div class="card-wrap__details details">
+								<div class="cwd-separate">
+									<div class="details__item"><span class="icon-calendar"></span> 23 декабря 2019</div>
+									<div class="details__item"><span class="icon-comment"></span> 2</div>
+									<div class="details__item"><span class="icon-eye"></span> 435</div>
+									<div class="details__item">
+										<div class="rating rating--warning">
+											<span class="icon-star"><span class="path1"></span><span class="path2"></span></span>
+											<span class="icon-star"><span class="path1"></span><span class="path2"></span></span>
+											<span class="icon-star"><span class="path1"></span><span class="path2"></span></span>
+											<span class="icon-star"><span class="path1"></span><span class="path2"></span></span>
+											<span class="icon-star"><span class="path1"></span><span class="path2"></span></span>
+										</div>
+									</div>
+									<div class="details__item">
+										<div class="like-wrap">
+											<div class="like"><span class="icon-like"></span> 2</div>
+											<div class="dislike"><span class="icon-dislike"></span> 0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="card-wrap__img">
+										<img src="img/image.png" alt="">
+										<a href="#" class="zoom"><span class="icon-zoom"></span></a>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="info-block">
+										<div class="info-block__list">
+											<div class="info-block__item">
+												<span class="info-block__label">Кухня</span>
+												<span class="info-block__labeled">Русская</span>
+											</div>
+											<div class="info-block__item">
+												<span class="info-block__label">Калорийность</span>
+												<span class="info-block__labeled">148 ккал</span>
+											</div>
+											<div class="info-block__item">
+												<span class="info-block__label">Порции</span>
+												<span class="info-block__labeled">7 порций</span>
+											</div>
+											<div class="info-block__item">
+												<span class="info-block__label">Время готовки</span>
+												<span class="info-block__labeled">55 мин.</span>
+											</div>
+											<div class="info-block__item">
+												<span class="info-block__label">Белки*</span>
+												<span class="info-block__labeled">10 гр.</span>
+											</div>
+											<div class="info-block__item">
+												<span class="info-block__label">Жиры*</span>
+												<span class="info-block__labeled">5 гр.</span>
+											</div>
+											<div class="info-block__item">
+												<span class="info-block__label">Углеводы*</span>
+												<span class="info-block__labeled">180 гр.</span>
+											</div>
+										</div>
+										<div class="info-block__footer">
+											<span>*на 100 гр. продукта</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-wrap__description">
+								<p><strong>Классический салат Цезарь с креветками</strong> – простое блюдо, которое отличается изысканным вкусом  и доступностью ингредиентов. Приготовить этот салат по классическом рецепту очень легко. Для этого потребуется взять отварные или обжаренные креветки, соединить их с сыром, сухариками, овощами, а также заправить все это традиционным соусом. Классический салат Цезарь с креветками отлично подходит для праздничного стола. Он отличается невысокой калорийностью и богатыми вкусовыми качествами. Зачастую салаты с морепродуктами подают в ресторанах и кафе. Тем не менее, рецепт Цезаря с креветками настолько прост, что готовить его вместе с классическим соусом для Цезаря можно   и в домашних условиях. Рецепт классического салата Цезарь с креветками очень простой. По нему легко можно приготовить изысканное блюдо для праздничного стола. Также Вы всегда можете порадовать своих близких вкусным и полезным салатом. </p>
+							</div>
+
+							<div class="section__head">
+								<h3 class="section__title"><span class="sh-separate">Ингредиенты</span></h3>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section pb0">
-			<div class="container">
-				<div class="section__head">
-					<h2 class="section__title"><span class="sh-separate">Лучшие по просмотрам</span></h2>
-					<div class="cards-slider-pagination csp2"></div>
-				</div>
-			</div>
-			<div class="section-bg">
-				<div class="section-bg__img img3"><img src="img/il-3.svg" alt=""></div>
-				<div class="section-bg__img img4"><img src="img/il-4.svg" alt=""></div>
-				<div class="container">
-					<div class="cards-slider best-slider">
-						<div>
-							<article class="card">
-								<a href="#" class="card__link">
-									<div class="card__img" style="background-image: url('img/card-img4.jpg')">
-										<span class="bd-tags">Закуски</span>
-									</div>
-									<div class="card__body">
-										<div class="card__head">
-											<div class="card__title">Закуска из баклажанов с помидорами и чесноком</div>
-										</div>
-									</div>
-								</a>
-							</article>
-						</div>
-						<div>
-							<article class="card">
-								<a href="#" class="card__link">
-									<div class="card__img" style="background-image: url('img/card-img5.jpg')">
-										<span class="bd-tags">Закуски</span>
-									</div>
-									<div class="card__body">
-										<div class="card__head">
-											<div class="card__title">Спагетти с соусом "А-ля Болоньезе"</div>
-										</div>
-									</div>
-								</a>
-							</article>
-						</div>
-						<div>
-							<article class="card">
-								<a href="#" class="card__link">
-									<div class="card__img" style="background-image: url('img/card-img6.jpg')">
-										<span class="bd-tags">Закуски</span>
-									</div>
-									<div class="card__body">
-										<div class="card__head">
-											<div class="card__title">Шоколадный торт с черной смородиной</div>
-										</div>
-									</div>
-								</a>
-							</article>
-						</div>
-						<div>
-							<article class="card">
-								<a href="#" class="card__link">
-									<div class="card__img" style="background-image: url('img/card-img6.jpg')">
-										<span class="bd-tags">Закуски</span>
-									</div>
-									<div class="card__body">
-										<div class="card__head">
-											<div class="card__title">Шоколадный торт с черной смородиной</div>
-										</div>
-									</div>
-								</a>
-							</article>
-						</div>
-					</div>
 
-					<div class="section__footer">
-						<span class="sf-separate">
-							<a href="#" class="btn btn--info btn--icon"><span class="icon-loading"></span> показать еще</a>
-						</span>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section pb0">
-			<div class="container">
-				<div class="section__head">
-					<h2 class="section__title"><span class="sh-separate">Ручной выбор рубрики</span></h2>
-					<div class="cards-slider-pagination csp3"></div>
-				</div>
-			</div>
-			<div class="section-bg">
-				<div class="section-bg__img img1"><img src="img/il-1.svg" alt=""></div>
-				<div class="section-bg__img img5"><img src="img/il-5.svg" alt=""></div>
-				<div class="container">
-					<div class="cards-slider rubric-slider">
-						<div>
-							<article class="card">
-								<a href="#" class="card__link">
-									<div class="card__img" style="background-image: url('img/card-img7.jpg')">
-										<span class="bd-tags">Десерт</span>
-									</div>
-									<div class="card__body">
-										<div class="card__head">
-											<div class="card__title">Десерт банановый на скорую руку</div>
-										</div>
-									</div>
-								</a>
-							</article>
-						</div>
-						<div>
-							<article class="card">
-								<a href="#" class="card__link">
-									<div class="card__img" style="background-image: url('img/card-img8.jpg')">
-										<span class="bd-tags">Cалаты</span>
-									</div>
-									<div class="card__body">
-										<div class="card__head">
-											<div class="card__title">Рецепт салата "Крабик" в тарталетках</div>
-										</div>
-									</div>
-								</a>
-							</article>
-						</div>
-						<div>
-							<article class="card">
-								<a href="#" class="card__link">
-									<div class="card__img" style="background-image: url('img/card-img9.jpg')">
-										<span class="bd-tags">Супы</span>
-									</div>
-									<div class="card__body">
-										<div class="card__head">
-											<div class="card__title">Суп из кролика с цветной капустой и брокколи</div>
-										</div>
-									</div>
-								</a>
-							</article>
-						</div>
-						<div>
-							<article class="card">
-								<a href="#" class="card__link">
-									<div class="card__img" style="background-image: url('img/card-img9.jpg')">
-										<span class="bd-tags">Супы</span>
-									</div>
-									<div class="card__body">
-										<div class="card__head">
-											<div class="card__title">Суп из кролика с цветной капустой и брокколи</div>
-										</div>
-									</div>
-								</a>
-							</article>
-						</div>
-					</div>
-
-					<div class="section__footer">
-						<span class="sf-separate">
-							<a href="#" class="btn btn--info btn--icon"><span class="icon-loading"></span> показать еще</a>
-						</span>
-					</div>
-				</div>
-			</div>
-		</section>
 	</main>
 	<!-- MAIN EOF   -->
 		
