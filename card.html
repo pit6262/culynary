@@ -252,7 +252,7 @@
 		<section class="section">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-3 sidebar">
+					<div class="col-xl-3 sidebar hidden-lg">
 						<div class="sidebar__title"><span class="sh-separate">Рубрикатор</span></div>
 						<div class="sidebar__nav">
 							<ul class="nav-rubric-l">
@@ -441,7 +441,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-xl-9">
+					<div class="col-xl-9 content">
 						<div class="card-wrap">
 							<h1 class="card-wrap__title">Салат Цезарь с креветками</h1>
 
@@ -461,21 +461,20 @@
 									</div>
 									<div class="details__item">
 										<div class="like-wrap">
-											<div class="like"><span class="icon-like"></span> 2</div>
-											<div class="dislike"><span class="icon-dislike"></span> 0</div>
+											<a href="#" class="like"><span class="icon-like"></span> 2</a>
+											<a href="#" class="dislike"><span class="icon-dislike"></span> 0</a>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div class="row">
-								<div class="col-lg-8">
-									<div class="card-wrap__img">
-										<img src="img/image.png" alt="">
+							<div class="row card-info">
+								<div class="col-lg-8 card-info__left">
+									<div class="card-wrap__img" style="background-image: url('img/image.png')">
 										<a href="#" class="zoom"><span class="icon-zoom"></span></a>
 									</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-4 card-info__right">
 									<div class="info-block">
 										<div class="info-block__list">
 											<div class="info-block__item">
@@ -512,14 +511,460 @@
 										</div>
 									</div>
 								</div>
+								<div class="col-lg-12 card-info__description">
+									<p><strong>Классический салат Цезарь с креветками</strong> – простое блюдо, которое отличается изысканным вкусом  и доступностью ингредиентов. Приготовить этот салат по классическом рецепту очень легко. Для этого потребуется взять отварные или обжаренные креветки, соединить их с сыром, сухариками, овощами, а также заправить все это традиционным соусом. Классический салат Цезарь с креветками отлично подходит для праздничного стола. Он отличается невысокой калорийностью и богатыми вкусовыми качествами. Зачастую салаты с морепродуктами подают в ресторанах и кафе. <br>Тем не менее, рецепт Цезаря с креветками настолько прост, что готовить его вместе с классическим соусом для Цезаря можно   и в домашних условиях. Рецепт классического салата Цезарь с креветками очень простой. По нему легко можно приготовить изысканное блюдо для праздничного стола. Также Вы всегда можете порадовать своих близких вкусным и полезным салатом. </p>
+								</div>
 							</div>
 
-							<div class="card-wrap__description">
-								<p><strong>Классический салат Цезарь с креветками</strong> – простое блюдо, которое отличается изысканным вкусом  и доступностью ингредиентов. Приготовить этот салат по классическом рецепту очень легко. Для этого потребуется взять отварные или обжаренные креветки, соединить их с сыром, сухариками, овощами, а также заправить все это традиционным соусом. Классический салат Цезарь с креветками отлично подходит для праздничного стола. Он отличается невысокой калорийностью и богатыми вкусовыми качествами. Зачастую салаты с морепродуктами подают в ресторанах и кафе. Тем не менее, рецепт Цезаря с креветками настолько прост, что готовить его вместе с классическим соусом для Цезаря можно   и в домашних условиях. Рецепт классического салата Цезарь с креветками очень простой. По нему легко можно приготовить изысканное блюдо для праздничного стола. Также Вы всегда можете порадовать своих близких вкусным и полезным салатом. </p>
-							</div>
+							
 
 							<div class="section__head">
 								<h3 class="section__title"><span class="sh-separate">Ингредиенты</span></h3>
+								<div class="section__head-rb">
+									<div class="counter">
+										<button class="counter__btn counter__btn--plus js-plus" type="button"><span class="icon-b-plus"></span></button>
+										<input type="text" class="counter__input" value="2 Порции"/>
+										<button class="counter__btn counter__btn--minus js-minus" type="button"><span class="icon-b-minus"></span></button>
+									</div>
+								</div>
+							</div>
+							<div class="ingredients-table">
+								<label class="ingredients-table__row is-checked">
+									<div class="ingredients-table__td ingredients-table__td--check">
+										<div class="checkbox" >
+											<input type="checkbox" checked="">
+											<span class="checkbox__figure"></span>
+										</div>
+									</div>
+									<div class="ingredients-table__td">Яйцо куриное свежее</div>
+									<div class="ingredients-table__td">1 шт.</div>
+								</label>
+								<label class="ingredients-table__row">
+									<div class="ingredients-table__td ingredients-table__td--check">
+										<div class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+										</div>
+									</div>
+									<div class="ingredients-table__td">Оливковое масло</div>
+									<div class="ingredients-table__td">4 ст.л.</div>
+								</label>
+								<label class="ingredients-table__row">
+									<div class="ingredients-table__td ingredients-table__td--check">
+										<div class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+										</div>
+									</div>
+									<div class="ingredients-table__td">Лимонный сок</div>
+									<div class="ingredients-table__td">1 ч.л.</div>
+								</label>
+								<label class="ingredients-table__row">
+									<div class="ingredients-table__td ingredients-table__td--check">
+										<div class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+										</div>
+									</div>
+									<div class="ingredients-table__td">Соус вустерский</div>
+									<div class="ingredients-table__td">1 ч.л.</div>
+								</label>
+								<label class="ingredients-table__row">
+									<div class="ingredients-table__td ingredients-table__td--check">
+										<div class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+										</div>
+									</div>
+									<div class="ingredients-table__td">Креветки</div>
+									<div class="ingredients-table__td">200 г</div>
+								</label>
+								<label class="ingredients-table__row">
+									<div class="ingredients-table__td ingredients-table__td--check">
+										<div class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+										</div>
+									</div>
+									<div class="ingredients-table__td">Помидоры черри</div>
+									<div class="ingredients-table__td">200 г</div>
+								</label>
+								<label class="ingredients-table__row">
+									<div class="ingredients-table__td ingredients-table__td--check">
+										<div class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+										</div>
+									</div>
+									<div class="ingredients-table__td">Салат Ромэн (Романо)</div>
+									<div class="ingredients-table__td">0.5 шт.</div>
+								</label>
+								<label class="ingredients-table__row">
+									<div class="ingredients-table__td ingredients-table__td--check">
+										<div class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+										</div>
+									</div>
+									<div class="ingredients-table__td">Салатный микс</div>
+									<div class="ingredients-table__td">1 горсть(и).</div>
+								</label>
+								<label class="ingredients-table__row">
+									<div class="ingredients-table__td ingredients-table__td--check">
+										<div class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+										</div>
+									</div>
+									<div class="ingredients-table__td">Хлеб белый</div>
+									<div class="ingredients-table__td">200 г</div>
+								</label>
+								<label class="ingredients-table__row">
+									<div class="ingredients-table__td ingredients-table__td--check">
+										<div class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+										</div>
+									</div>
+									<div class="ingredients-table__td">Пармезан</div>
+									<div class="ingredients-table__td">2 ст.л.</div>
+								</label>
+								<label class="ingredients-table__row">
+									<div class="ingredients-table__td ingredients-table__td--check">
+										<div class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+										</div>
+									</div>
+									<div class="ingredients-table__td">Чеснок</div>
+									<div class="ingredients-table__td">2 зубч.</div>
+								</label>
+								<label class="ingredients-table__row">
+									<div class="ingredients-table__td ingredients-table__td--check">
+										<div class="checkbox">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+										</div>
+									</div>
+									<div class="ingredients-table__td">Соль и перец</div>
+									<div class="ingredients-table__td">по вкусу</div>
+								</label>
+							</div>
+
+							<div class="section__head">
+								<h3 class="section__title"><span class="sh-separate">Процесс приготовления</span></h3>
+							</div>
+
+							<div class="pr-steps">
+								<div class="pr-steps__item">
+									<div class="pr-steps__sidebar">
+										<span>шаг</span>
+										<span>1</span>
+										<span>из 5</span>
+									</div>
+									<div class="pr-steps__content">
+										<div class="pr-steps__img">
+											<div class="img" style="background-image: url('img/pr-steps-img1.jpg')"></div>
+										</div>
+										<div class="pr-steps__body">
+											<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+										</div>
+										<a href="#rec" class="zoom popup-open"><span class="icon-zoom"></span></a>
+									</div>
+								</div>
+								<div class="pr-steps__item">
+									<div class="pr-steps__sidebar">
+										<span>шаг</span>
+										<span>2</span>
+										<span>из 5</span>
+									</div>
+									<div class="pr-steps__content">
+										<div class="pr-steps__img">
+											<div class="img" style="background-image: url('img/pr-steps-img2.jpg')"></div>
+										</div>
+										<div class="pr-steps__body">
+											<p>В оливковое масло выдавите через чесночницу чеснок и оставьте на несколько минут. Чесночным маслом сбрызните хлебные кубики и отправьте их в духовку запекаться до золотистой корочки.</p>
+										</div>
+										<a href="#rec" class="zoom popup-open"><span class="icon-zoom"></span></a>
+									</div>
+								</div>
+								<div class="pr-steps__item">
+									<div class="pr-steps__sidebar">
+										<span>шаг</span>
+										<span>3</span>
+										<span>из 5</span>
+									</div>
+									<div class="pr-steps__content">
+										<div class="pr-steps__img">
+											<div class="img" style="background-image: url('img/pr-steps-img3.jpg')"></div>
+										</div>
+										<div class="pr-steps__body">
+											<p>Параллельно с приготовлением гренок, отварите креветки в круто подсоленной воде с добавлением лаврового листа, веточек укропа и горошков черного перца. Варите креветки до готовности и выключите огонь.</p>
+										</div>
+										<a href="#rec" class="zoom popup-open"><span class="icon-zoom"></span></a>
+									</div>
+								</div>
+								<div class="pr-steps__item">
+									<div class="pr-steps__sidebar">
+										<span>шаг</span>
+										<span>4</span>
+										<span>из 5</span>
+									</div>
+									<div class="pr-steps__content">
+										<div class="pr-steps__img">
+											<div class="img" style="background-image: url('img/pr-steps-img4.jpg')"></div>
+											<!-- <div class="img" style="background-image: url('img/pr-steps-img4.jpg')"></div> -->
+										</div>
+										<div class="pr-steps__body">
+											<p>Для заправки салата цезарь с креветками возьмите два куриных желтка (сырых) и разотрите их с горчицей, добавьте сюда же выдавленный чеснок, соль, перец черный молотый по вкусу.</p>
+										</div>
+										<a href="#rec" class="zoom popup-open"><span class="icon-zoom"></span></a>
+									</div>
+								</div>
+								<div class="pr-steps__item">
+									<div class="pr-steps__sidebar">
+										<span>шаг</span>
+										<span>5</span>
+										<span>из 5</span>
+									</div>
+									<div class="pr-steps__content">
+										<div class="pr-steps__img">
+											<div class="img" style="background-image: url('img/pr-steps-img5.jpg')"></div>
+										</div>
+										<div class="pr-steps__body">
+											<p>Ну вот, у нас с вами и получился салат «Цезарь с креветками». Присыпьте его сверху тертым пармезаном. Подавать его на стол необходимо сразу же, чтобы гренки не размякли. Приятного вам аппетита.</p>
+										</div>
+										<a href="#rec" class="zoom popup-open"><span class="icon-zoom"></span></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="box">
+								<div class="box__top">
+									<a href="#" class="hidden-lg btn btn--success btn-print btn--icon"><span class="icon-print"></span> печать рецепта</a>
+									<div class="share">
+										<div class="share__title visible-lg hidden-sm">
+											<span class="share__icon icon-assessment"></span>
+											Оценить рецепт
+										</div>
+										<div class="separate visible-lg hidden-sm"></div>
+										<div class="share__buttons">
+											<a href="#" class="like-btn"><span class="icon-like"></span></a>
+											<a href="#" class="dislike-btn"><span class="icon-dislike"></span></a>
+										</div>
+									</div>
+									<a href="#" class="btn btn--info btn-book btn--icon"><span class="icon-book"></span> в книгу рецептов</a>
+								</div>
+								<div class="box__bottom">
+									<div class="share">
+										<div class="share__title">
+											<span class="share__icon icon-social"></span> 
+											Поделиться ссылкой <span class="hidden-sm">с друзьями </span>
+										</div>
+										<div class="separate"></div>
+										<div class="share__buttons social social--lg">
+											<a href="#" class="share__btn social__link"><span class="icon-odnoklasniky"></span></a>
+											<a href="#" class="share__btn social__link"><span class="icon-vk"></span></a>
+											<a href="#" class="share__btn social__link"><span class="icon-fb"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="section__head">
+								<h3 class="section__title"><span class="sh-separate">Комментарии <span class="kb">4</span></span></h3>
+								<div class="section__head-rb">
+									<a href="#" class="btn btn--success btn--icon btn-comment"><span class="icon-comment"></span> добавить</a>
+								</div>
+							</div>
+							
+
+							<div class="comments-wrap">
+								<div class="comment">
+									<div class="comment__wrap">
+										<div class="comment__sidebar">
+											<div class="comment__avatar" style="background-image: url('img/avatar.png')"></div>
+										</div>
+										<div class="comment__content">
+											<div class="comment__head">
+												<span class="comment__author-name">Анастасия</span>
+												<span class="comment__date">вчера в 16:02</span>
+											</div>
+											<div class="comment__body">
+												<div class="comment__text">
+													Салат очень понравился, уплетали всей семьей за обе щеки:) <br>Вот только горчицы я кладу совсем чуть-чуть и без уксуса, но это по вкусу.
+												</div>
+											</div>
+											<div class="comment__foot details">
+												<div class="details__item">
+													<div class="like-wrap">
+														<a href="#" class="like"><span class="icon-like"></span> 1</a>
+													</div>
+												</div>
+												<div class="details__item">
+													<a href="#" class="link"><span class="dotted">ответить</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comment-reply">
+										<div class="comment__wrap">
+											<div class="comment__sidebar">
+												<div class="comment__avatar" style="background-image: url('img/avatar2.png')"></div>
+											</div>
+											<div class="comment__content">
+												<div class="comment__head">
+													<span class="comment__author-name">Екатерина</span>
+													<span class="comment__date">вчера в 16:02</span>
+												</div>
+												<div class="comment__body">
+													<div class="comment__text">Это лучший салат! Еще очень вкусно при обжарке курицы добавить немного пармезана. он тает и придает очень пикантный вкус салату.</div>
+												</div>
+												<div class="comment__foot details">
+													<div class="details__item">
+														<div class="like-wrap">
+															<a href="#" class="like"><span class="icon-like"></span> 2</a>
+														</div>
+													</div>
+													<div class="details__item">
+														<a href="#" class="link"><span class="dotted">ответить</span></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="comment">
+									<div class="comment__wrap">
+										<div class="comment__sidebar">
+											<div class="comment__avatar" style="background-image: url('img/avatar.png')"></div>
+										</div>
+										<div class="comment__content">
+											<div class="comment__head">
+												<span class="comment__author-name">Анастасия</span>
+												<span class="comment__date">вчера в 16:02</span>
+											</div>
+											<div class="comment__body">
+												<div class="comment__text">
+													Салат очень понравился, уплетали всей семьей за обе щеки:) <br>Вот только горчицы я кладу совсем чуть-чуть и без уксуса, но это по вкусу.
+												</div>
+											</div>
+											<div class="comment__foot details">
+												<div class="details__item">
+													<div class="like-wrap">
+														<a href="#" class="like"><span class="icon-like"></span> 1</a>
+													</div>
+												</div>
+												<div class="details__item">
+													<a href="#" class="link"><span class="dotted">ответить</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> -->
+								<div class="comments-wrap__footer">
+									<a href="#" class="btn btn--info btn--icon"><span class="icon-loading"></span> показать еще</a>
+								</div>
+							</div>
+
+							<div class="section__head text-center">
+								<h3 class="section__title "><span class="sh-separate">Оставить комментарий</span></h3>
+							</div>
+
+							<div class="add-comment">
+								<form action="#">
+									<div class="row">
+										<div class="col-lg-5 col-md-6">
+											<div class="form-field form-icon">
+												<span class="placeholder">Ваше имя <span class="form-star">*</span></span>
+												<input type="text" class="form-input">
+												<span class="form-icon__el"><span class="icon-user"></span></span>
+												
+											</div>
+											<div class="form-field form-icon">
+												<span class="placeholder">Ваш электронный адрес <span class="form-star">*</span></span>
+												<input type="email" class="form-input">
+												<span class="form-icon__el"><span class="icon-mail"></span></span>
+												
+											</div>
+											<p class="mb10">Фото до 4 штук , размер до 5 МB</p>
+											<div class="form-field form-icon">
+												<input type="file" class="form-input styler" data-browse="Обзор" multiple>
+												<span class="form-icon__el"><span class="icon-photo"></span></span>
+
+											</div>
+										</div>
+										<div class="col-lg-7 col-md-6">
+											<div class="form-field form-icon">
+												<span class="placeholder">Ваш комментарий <span class="form-star">*</span></span>
+												<span class="textarea">
+													<textarea class="form-input"></textarea>
+												</span>
+												
+												<span class="form-icon__el"><span class="icon-comment"></span></span>
+												<span class="smile-btn"><img src="img/smile.png" alt=""></span>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-6">
+											<p>Ваш электронный адрес не будет опубликован. 
+												<span class="hidden-md"><br>Обязательные поля помечены <span class="form-star">*</span></span>
+												<span class="visible-md"><span class="form-star">*</span> Обязательные поля </span>
+											</p>
+										</div>	
+										<div class="col-lg-4 col-md-6">
+											<div class="btn-fw">
+												<button type="submit" class="btn btn--block btn--success btn--icon"><span class="icon-big-arrow-right"></span> отправить</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<div class="section__head text-center">
+								<h3 class="section__title"><span class="sh-separate">Похожие рецепты</span></h3>
+							</div>
+							
+							<div class="cards-wrap">
+								<div class="row">
+									<div class="col-lg-4 col-md-6">
+										<article class="card card--md">
+											<a href="#" class="card__link">
+												<div class="card__img" style="background-image: url('img/pr-img1.jpg')"></div>
+												<div class="card__body">
+													<div class="card__head">
+														<div class="card__title">Салат «Цезарь» традиционный</div>
+													</div>
+												</div>
+											</a>
+										</article>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<article class="card card--md">
+											<a href="#" class="card__link">
+												<div class="card__img" style="background-image: url('img/pr-img2.jpg')"></div>
+												<div class="card__body">
+													<div class="card__head">
+														<div class="card__title">Классический рецепт «Цезаря» с курицей</div>
+													</div>
+												</div>
+											</a>
+										</article>
+									</div>
+									<div class="col-lg-4 col-md-6 hidden-md">
+										<article class="card card--md">
+											<a href="#" class="card__link">
+												<div class="card__img" style="background-image: url('img/pr-img3.jpg')"></div>
+												<div class="card__body">
+													<div class="card__head">
+														<div class="card__title">Салат «Цезарь» по домашнему</div>
+													</div>
+												</div>
+											</a>
+										</article>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -590,19 +1035,131 @@
 	</footer>
 	<!-- FOOTER EOF   -->
 
-	<!-- <a href="#callback" class="block__link popup-open">Попап</a>
+	<!-- <a href="#callback" class="block__link popup-open">Попап</a> -->
 	
-	<div class="popup popup-callback ">
+	<div class="popup popup-rec ">
 		<div class="popup-container">
 			<div class="popup-content">
-				<div class="popup__close"></div>
-				<div class="popup__title"></div>
-				<div class="popup__text"></div>
+				<div class="popup-w-close visible-sm">
+					<a href="#" class="btn btn--info btn--icon popup-close "><span class="icon-close"></span> Закрыть</a>
+				</div>
+				<div class="pr-steps pr-steps-slider">
+					<div class="pr-steps__item">
+						<div class="pr-steps__img">
+							<img src="img/p-img.jpg" alt="">
+						</div>
+						<div class="pr-steps__sidebar">
+							<span>шаг</span>
+							<span>1</span>
+							<span>из 6</span>
+						</div>
+						<div class="pr-steps__content">
+							
+							<div class="pr-steps__body">
+								<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="pr-steps__item">
+						<div class="pr-steps__img">
+							<img src="img/p-img.jpg" alt="">
+						</div>
+						<div class="pr-steps__sidebar">
+							<span>шаг</span>
+							<span>2</span>
+							<span>из 6</span>
+						</div>
+						<div class="pr-steps__content">
+							
+							<div class="pr-steps__body">
+								<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="pr-steps__item">
+						<div class="pr-steps__img">
+							<img src="img/p-img.jpg" alt="">
+						</div>
+						<div class="pr-steps__sidebar">
+							<span>шаг</span>
+							<span>3</span>
+							<span>из 6</span>
+						</div>
+						<div class="pr-steps__content">
+							
+							<div class="pr-steps__body">
+								<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="pr-steps__item">
+						<div class="pr-steps__img">
+							<img src="img/p-img.jpg" alt="">
+						</div>
+						<div class="pr-steps__sidebar">
+							<span>шаг</span>
+							<span>4</span>
+							<span>из 6</span>
+						</div>
+						<div class="pr-steps__content">
+							
+							<div class="pr-steps__body">
+								<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="pr-steps__item">
+						<div class="pr-steps__img">
+							<img src="img/p-img.jpg" alt="">
+						</div>
+						<div class="pr-steps__sidebar">
+							<span>шаг</span>
+							<span>5</span>
+							<span>из 6</span>
+						</div>
+						<div class="pr-steps__content">
+							
+							<div class="pr-steps__body">
+								<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="pr-steps__item">
+						<div class="pr-steps__img">
+							<img src="img/p-img.jpg" alt="">
+						</div>
+						<div class="pr-steps__sidebar">
+							<span>шаг</span>
+							<span>6</span>
+							<span>из 6</span>
+						</div>
+						<div class="pr-steps__content">
+							
+							<div class="pr-steps__body">
+								<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="sf-foot sf-foot--flex">
+					<div class="box-paging">
+						
+					</div>
+					<span class="sf-separate hidden-sm">
+						<a href="#" class="btn btn--info btn--icon popup-close"><span class="icon-close"></span> Закрыть</a>
+					</span>
+				</div>
 			</div>
 		</div>
 	</div>
 	
-	<div class="popup popup-video">
+	<!-- <div class="popup popup-video">
 		<div class="popup-container">
 			<div class="popup-content">
 				<div class="popup__close"></div>

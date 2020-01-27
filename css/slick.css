@@ -126,22 +126,18 @@
 .slick-dots li {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 8px;
 }
 .slick-dots li:first-child:last-child {
     display: none;
 }
-.slick-dots li.slick-active button {background: #131313;}
+
 .slick-dots button {
     display: block;
-    width: 10px;
-    height: 10px;
-    border-radius:  50%;
-    text-indent: -999px;
+
     overflow: hidden;
     padding: 0;
     background: transparent;
-    border:  1px solid;
+    border: none;
    
 }
 
