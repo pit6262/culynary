@@ -8,11 +8,46 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/OverlayScrollbars.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-grid.css">
 			
 </head>
-<body class="loaded">
+<body class="loaded bg-loaded">
 <style>
+	.container {
+		position: relative;
+	}
+	.bg-loaded {background: #F1FBFF;}
+	.ld-header {
+		padding: 40px 0 ;
+		margin:  0 ;
+		position: relative;
+		border-bottom: .1rem solid #85989f;
+		margin-bottom: 70px;	
+	}
+	.main-links {position: relative;}
+	.main-links:after {
+		content: '';
+		display: block;
+		position: absolute;
+		right: -.9rem;
+		top: 1.5rem;
+		background: url('img/right-illustration.svg') no-repeat center;
+		background-size: contain;
+		width: 27.6rem;
+		height: 28.4rem;
+	}
+	.main-links:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: -4rem;
+		top: -.5rem;
+		background: url('img/left-illustration.svg') no-repeat center;
+		background-size: contain;
+		width: 38.3rem;
+		height: 28.9rem;
+	}
 	.main-elements .wrapper {max-width: 1200px;padding: 40px;margin: 0 auto;}
 	.main-elements-row {
 		margin: 0 -2rem;
@@ -46,26 +81,20 @@
 </style>
 
 <div class="main-wrapper">
-	<div class="main main-elements">
+	<div class="main main-links">
 		<div class="container">
-			<div class="h2">Colors</div>
-			
-			<div class="main-elements-color">
-				<span class="main-elements-color__block" style="background-color: #000"></span>
-				<span class="main-elements-color__title">#000000</span>
-			</div>
-			<div class="main-elements-color">
-				<span class="main-elements-color__block" style="background-color: #ff00aa"></span>
-				<span class="main-elements-color__title">#ff00aa</span>
-			</div>
-			<div class="main-elements-color">
-				<span class="main-elements-color__block" style="background-color: #00ffcc"></span>
-				<span class="main-elements-color__title">#00ffcc</span>
-			</div>
+			<div class="ld-header">
 				
-			<div class="h2">typography</div>
+				<div class="logo"><img src="img/logo.svg" alt=""></div>
+					
+			</div>
+		</div>
+		<div class="container" >
+			
+				
+			<div class="h2">TYPOGRAPHY</div>
 			<div class="row">
-				<div class="col-lg-3 ">
+				<div class="col-lg-2 ">
 					<h1>H1</h1>
 					
 					<h2>H2</h2>
@@ -79,7 +108,8 @@
 					<h6>H6</h6>
 					
 				</div>
-				<div class="col-lg-9">
+				<div class="col-lg-10">
+					<h6>paragraf</h6>
 					<div class="mt40"></div>
 					<p class="size-xll"><strong>(2rem)</strong>Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipisicing elit. Aliquam repellendus distinctio nesciunt eligendi, consequatur voluptate, architecto </p>
 
@@ -94,20 +124,27 @@
 					
 					<p class="size-xs"><strong>(1rem)</strong>Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipisicing elit. Aliquam repellendus distinctio nesciunt eligendi, consequatur voluptate, architecto </p>
 
+					<h6>list</h6>
 					<ul>
 						<li>Lorem ipsum dolor sit amet.</li>
 						<li>Lorem ipsum dolor sit amet.</li>
-						<li>Lorem ipsum dolor sit amet.</li>
-						<li>Lorem ipsum dolor sit amet.</li>
+
 					</ul>
 					<ol>
 						<li>Lorem ipsum dolor sit amet.</li>
 						<li>Lorem ipsum dolor sit amet.</li>
-						<li>Lorem ipsum dolor sit amet.</li>
-						<li>Lorem ipsum dolor sit amet.</li>
-					</ol>
 
-					<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nemo nesciunt, praesentium in rem commodi optio expedita voluptas iste quaerat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe eaque qui, neque aut id aliquid ducimus quis ipsum quae odit!</blockquote>
+					</ol>
+					
+					<h6>blockquote</h6>
+					<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nemo nesciunt, praesentium in rem commodi optio expedita voluptas iste quaerat.Lorem ipsum dolor sit amet</blockquote>
+
+					<h6>links</h6>
+					<a href="#">link</a>
+					<a href="#" class="link"><span class="dotted">link dotted</span></a>
+					<a href="#" class="text-success">link green</a>
+					<a href="#" class="text-info">link blue</a>
+					<a href="#" class="text-danger">link red</a>
 				</div>
 			</div>
 
@@ -116,42 +153,130 @@
 			<div class="h2">BUTTONS</div>
 			
 			<div class="mt20 mb20">
-				<a href="#" class="btn">default</a>
-				<a href="#" class="btn btn--disabled">disabled</a>
+				<a href="#" class="btn">default button</a>
+				<a href="#" class="btn btn--success">green button</a>
+				<a href="#" class="btn btn--info">blue button</a>
+				<a href="#" class="btn btn--danger">red button</a>
+				<div class="mb20"></div>
+				<a href="#" class="btn btn--icon"><span class="icon-user"></span> button + icon</a>
+				<a href="#" class="btn btn--icon btn--success"><span class="icon-user"></span> button + icon</a>
+				<a href="#" class="btn btn--icon btn--info"><span class="icon-user"></span> button + icon</a>
+				<a href="#" class="btn btn--icon btn--danger"><span class="icon-user"></span> button + icon</a>
+
+
 				<div class="mb20"></div>
 				<a href="#" class="btn btn--block">button block</a>
 			</div>
 
+			<div class="h2">Social</div>
+			<div class="mt20 mb20">
+				<div class="row">
+					<div class="col-lg-8 mb20">
+						<div class="share">
+							<div class="share__title">
+								<span class="share__icon icon-social"></span> 
+								Поделиться ссылкой <span class="hidden-sm">с друзьями </span>
+							</div>
+							<div class="separate"></div>
+							<div class="share__buttons social social--lg">
+								<a href="#" class="share__btn social__link"><span class="icon-odnoklasniky"></span></a>
+								<a href="#" class="share__btn social__link"><span class="icon-vk"></span></a>
+								<a href="#" class="share__btn social__link"><span class="icon-fb"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 mb20">
+						<div class="share">
+							<div class="share__title">
+								<span class="share__icon icon-assessment"></span>
+								Оценить рецепт
+							</div>
+							<div class="separate"></div>
+							<div class="share__buttons">
+								<a href="#" class="like-btn"><span class="icon-like"></span></a>
+								<a href="#" class="dislike-btn"><span class="icon-dislike"></span></a>
+							</div>
+						</div>
+						
+						<div class="mb20"></div>
+
+						<div class="share">
+							
+							<div class="share__buttons">
+								<a href="#" class="like-btn"><span class="icon-like"></span></a>
+								<a href="#" class="dislike-btn"><span class="icon-dislike"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="social ">
+							<a href="#" class="social__link"><span class="icon-youtube"></span></a>
+							<a href="#" class="social__link"><span class="icon-instagram"></span></a>
+							<a href="#" class="social__link"><span class="icon-vk"></span></a>
+							<a href="#" class="social__link"><span class="icon-fb"></span></a>
+						</div>
+						<div class="social social--info">
+							<a href="#" class="social__link"><span class="icon-youtube"></span></a>
+							<a href="#" class="social__link"><span class="icon-instagram"></span></a>
+							<a href="#" class="social__link"><span class="icon-vk"></span></a>
+							<a href="#" class="social__link"><span class="icon-fb"></span></a>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						
+						<div class="social social--lg">
+							<a href="#" class="social__link"><span class="icon-youtube"></span></a>
+							<a href="#" class="social__link"><span class="icon-instagram"></span></a>
+							<a href="#" class="social__link"><span class="icon-vk"></span></a>
+							<a href="#" class="social__link"><span class="icon-fb"></span></a>
+						</div>
+						<div class="social social--lg social--info">
+							<a href="#" class="social__link"><span class="icon-youtube"></span></a>
+							<a href="#" class="social__link"><span class="icon-instagram"></span></a>
+							<a href="#" class="social__link"><span class="icon-vk"></span></a>
+							<a href="#" class="social__link"><span class="icon-fb"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+				
 			<div class="h2">FORM ELEMENTS</div>
 
 			<div class="mt20 mb20">
 				<div class="row">
 					<div class="col-lg-4">
-						<div class="form-field">
-							<label for="">input</label>
-							<input type="text" class="form-input" placeholder="name">
+						<div class="form-field form-icon">
+							<span class="placeholder">Ваше имя <span class="form-star">*</span></span>
+							<input type="text" class="form-input">
+							<span class="form-icon__el"><span class="icon-user"></span></span>
+							
 						</div>
 					</div>
 					<div class="col-lg-4">
-						<div class="form-field">
-							<label for="">input error</label>
-							<input type="text" class="form-input error" placeholder="name">
+						<div class="form-field form-icon">
+							<input type="file" class="form-input styler" data-browse="Обзор" multiple>
+							<span class="form-icon__el"><span class="icon-photo"></span></span>
+
 						</div>
 					</div>
+
+
 					<div class="col-lg-4">
-						<div class="form-field">
-							<label for="">input valid</label>
-							<input type="text" class="form-input valid" placeholder="name">
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="form-field">
-							<label for="">Select</label>
-							<select class=" form-input">
+						<div class="form-field form-icon">
+							
+							<select class="styler" data-placeholder="Select">
+								<option></option>
+								<option value="">option 1</option>
+								<option value="">option 2</option>
+								<option value="">option 1</option>
+								<option value="">option 2</option>
 								<option value="">option 1</option>
 								<option value="">option 2</option>
 							</select>	
+							<span class="form-icon__el"><span class="icon-user"></span></span>
+							
 						</div>
+						
 					</div>
 					<div class="col-lg-8">
 						<div class="form-field">
@@ -180,41 +305,17 @@
 						</div>
 					</div>
 					<div class="col-lg-12">
-						<div class="form-field">
-
-							<label for="">Textarea</label>
-							<textarea placeholder="message" class="form-input"></textarea>
+						<div class="form-field form-icon">
+							<span class="placeholder">Ваш комментарий <span class="form-star">*</span></span>
+							<textarea class="form-input"></textarea>
+							<span class="form-icon__el"><span class="icon-comment"></span></span>
+							
 						</div>
 					</div>
 					
 				</div>
 			</div>
-				
-			<div class="row">
-				<div class="col-12">
-					
-				</div>
-			</div>
-				
 
-
-			<div class="h2">TABS</div>
-			<div class="mt20 mb20">
-				<div class="tab-wrap">
-					<ul class="nav-tab tabs">
-						<li class="nav-tab__item is-active">
-							<a href="#tabs_1" class="nav-tab__link">tabs1</a>
-						</li>
-						<li class="nav-tab__item">
-							<a href="#tabs_2" class="nav-tab__link">tabs2</a>
-						</li>
-					</ul>
-					<div class="box-tab">
-						<div class="tab-cont" id="tabs_1">tabs1 content</div>
-						<div class="tab-cont is-hidden" id="tabs_2">tabs2 content</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 
@@ -230,6 +331,7 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jquery.overlayScrollbars.min.js"></script>
 <script src="js/custom.js?ver1.0"></script>
 </body>
 </html>

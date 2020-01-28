@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/OverlayScrollbars.css" />
 </head>
 <body class="loaded">
 
@@ -178,7 +179,7 @@
 					<span class="icon-wine-glasses"></span>
 					<span class="dotted">Рецепты на Новый год 2020</span>
 				</a>
-				<a href="#" class="panel__link search-link hidden-sm">
+				<a href="#search" class="panel__link search-link hidden-sm popup-open">
 					<span class="icon-search"></span>
 					<span class="dotted">
 						<span class="search-link__full-text">Расширенный поиск</span>
@@ -195,7 +196,7 @@
 		<div class="container">
 			<div class="mobile-menu__header">
 				<a href="#" class="btn btn--icon "><span class="icon-user"></span> вход <span class="visible-sm"><span class="devider">/</span><span class="alt-text">регистрация</span></span></a>
-				<a href="#" class="btn btn--icon "><span class="icon-search"></span> <span class="visible-sm">расширенный поиск</span><span class="hidden-sm">поиск</span></a>
+				<a href="#search" class="btn btn--icon popup-open"><span class="icon-search"></span> <span class="visible-sm">расширенный поиск</span><span class="hidden-sm">поиск</span></a>
 				<a href="#" class="btn btn--icon btn--success add-recipe "><span class="icon-plus"></span> добавить рецепт</a>
 				<a href="#" class="btn toggle-menu"><span class="icon-close"></span></a>
 			</div>
@@ -530,124 +531,124 @@
 							</div>
 							<div class="ingredients-table">
 								<label class="ingredients-table__row is-checked">
-									<div class="ingredients-table__td ingredients-table__td--check">
-										<div class="checkbox" >
+									<span class="ingredients-table__td ingredients-table__td--check">
+										<span class="checkbox" >
 											<input type="checkbox" checked="">
 											<span class="checkbox__figure"></span>
-										</div>
-									</div>
-									<div class="ingredients-table__td">Яйцо куриное свежее</div>
-									<div class="ingredients-table__td">1 шт.</div>
+										</span>
+									</span>
+									<span class="ingredients-table__td">Яйцо куриное свежее</span>
+									<span class="ingredients-table__td">1 шт.</span>
 								</label>
 								<label class="ingredients-table__row">
-									<div class="ingredients-table__td ingredients-table__td--check">
-										<div class="checkbox">
+									<span class="ingredients-table__td ingredients-table__td--check">
+										<span class="checkbox">
 											<input type="checkbox">
 											<span class="checkbox__figure"></span>
-										</div>
-									</div>
-									<div class="ingredients-table__td">Оливковое масло</div>
-									<div class="ingredients-table__td">4 ст.л.</div>
+										</span>
+									</span>
+									<span class="ingredients-table__td">Оливковое масло</span>
+									<span class="ingredients-table__td">4 ст.л.</span>
 								</label>
 								<label class="ingredients-table__row">
-									<div class="ingredients-table__td ingredients-table__td--check">
-										<div class="checkbox">
+									<span class="ingredients-table__td ingredients-table__td--check">
+										<span class="checkbox">
 											<input type="checkbox">
 											<span class="checkbox__figure"></span>
-										</div>
-									</div>
-									<div class="ingredients-table__td">Лимонный сок</div>
-									<div class="ingredients-table__td">1 ч.л.</div>
+										</span>
+									</span>
+									<span class="ingredients-table__td">Лимонный сок</span>
+									<span class="ingredients-table__td">1 ч.л.</span>
 								</label>
 								<label class="ingredients-table__row">
-									<div class="ingredients-table__td ingredients-table__td--check">
-										<div class="checkbox">
+									<span class="ingredients-table__td ingredients-table__td--check">
+										<span class="checkbox">
 											<input type="checkbox">
 											<span class="checkbox__figure"></span>
-										</div>
-									</div>
-									<div class="ingredients-table__td">Соус вустерский</div>
-									<div class="ingredients-table__td">1 ч.л.</div>
+										</span>
+									</span>
+									<span class="ingredients-table__td">Соус вустерский</span>
+									<span class="ingredients-table__td">1 ч.л.</span>
 								</label>
 								<label class="ingredients-table__row">
-									<div class="ingredients-table__td ingredients-table__td--check">
-										<div class="checkbox">
+									<span class="ingredients-table__td ingredients-table__td--check">
+										<span class="checkbox">
 											<input type="checkbox">
 											<span class="checkbox__figure"></span>
-										</div>
-									</div>
-									<div class="ingredients-table__td">Креветки</div>
-									<div class="ingredients-table__td">200 г</div>
+										</span>
+									</span>
+									<span class="ingredients-table__td">Креветки</span>
+									<span class="ingredients-table__td">200 г</span>
 								</label>
 								<label class="ingredients-table__row">
-									<div class="ingredients-table__td ingredients-table__td--check">
-										<div class="checkbox">
+									<span class="ingredients-table__td ingredients-table__td--check">
+										<span class="checkbox">
 											<input type="checkbox">
 											<span class="checkbox__figure"></span>
-										</div>
-									</div>
-									<div class="ingredients-table__td">Помидоры черри</div>
-									<div class="ingredients-table__td">200 г</div>
+										</span>
+									</span>
+									<span class="ingredients-table__td">Помидоры черри</span>
+									<span class="ingredients-table__td">200 г</span>
 								</label>
 								<label class="ingredients-table__row">
-									<div class="ingredients-table__td ingredients-table__td--check">
-										<div class="checkbox">
+									<span class="ingredients-table__td ingredients-table__td--check">
+										<span class="checkbox">
 											<input type="checkbox">
 											<span class="checkbox__figure"></span>
-										</div>
-									</div>
-									<div class="ingredients-table__td">Салат Ромэн (Романо)</div>
-									<div class="ingredients-table__td">0.5 шт.</div>
+										</span>
+									</span>
+									<span class="ingredients-table__td">Салат Ромэн (Романо)</span>
+									<span class="ingredients-table__td">0.5 шт.</span>
 								</label>
 								<label class="ingredients-table__row">
-									<div class="ingredients-table__td ingredients-table__td--check">
-										<div class="checkbox">
+									<span class="ingredients-table__td ingredients-table__td--check">
+										<span class="checkbox">
 											<input type="checkbox">
 											<span class="checkbox__figure"></span>
-										</div>
-									</div>
-									<div class="ingredients-table__td">Салатный микс</div>
-									<div class="ingredients-table__td">1 горсть(и).</div>
+										</span>
+									</span>
+									<span class="ingredients-table__td">Салатный микс</span>
+									<span class="ingredients-table__td">1 горсть(и).</span>
 								</label>
 								<label class="ingredients-table__row">
-									<div class="ingredients-table__td ingredients-table__td--check">
-										<div class="checkbox">
+									<span class="ingredients-table__td ingredients-table__td--check">
+										<span class="checkbox">
 											<input type="checkbox">
 											<span class="checkbox__figure"></span>
-										</div>
-									</div>
-									<div class="ingredients-table__td">Хлеб белый</div>
-									<div class="ingredients-table__td">200 г</div>
+										</span>
+									</span>
+									<span class="ingredients-table__td">Хлеб белый</span>
+									<span class="ingredients-table__td">200 г</span>
 								</label>
 								<label class="ingredients-table__row">
-									<div class="ingredients-table__td ingredients-table__td--check">
-										<div class="checkbox">
+									<span class="ingredients-table__td ingredients-table__td--check">
+										<span class="checkbox">
 											<input type="checkbox">
 											<span class="checkbox__figure"></span>
-										</div>
-									</div>
-									<div class="ingredients-table__td">Пармезан</div>
-									<div class="ingredients-table__td">2 ст.л.</div>
+										</span>
+									</span>
+									<span class="ingredients-table__td">Пармезан</span>
+									<span class="ingredients-table__td">2 ст.л.</span>
 								</label>
 								<label class="ingredients-table__row">
-									<div class="ingredients-table__td ingredients-table__td--check">
-										<div class="checkbox">
+									<span class="ingredients-table__td ingredients-table__td--check">
+										<span class="checkbox">
 											<input type="checkbox">
 											<span class="checkbox__figure"></span>
-										</div>
-									</div>
-									<div class="ingredients-table__td">Чеснок</div>
-									<div class="ingredients-table__td">2 зубч.</div>
+										</span>
+									</span>
+									<span class="ingredients-table__td">Чеснок</span>
+									<span class="ingredients-table__td">2 зубч.</span>
 								</label>
 								<label class="ingredients-table__row">
-									<div class="ingredients-table__td ingredients-table__td--check">
-										<div class="checkbox">
+									<span class="ingredients-table__td ingredients-table__td--check">
+										<span class="checkbox">
 											<input type="checkbox">
 											<span class="checkbox__figure"></span>
-										</div>
-									</div>
-									<div class="ingredients-table__td">Соль и перец</div>
-									<div class="ingredients-table__td">по вкусу</div>
+										</span>
+									</span>
+									<span class="ingredients-table__td">Соль и перец</span>
+									<span class="ingredients-table__td">по вкусу</span>
 								</label>
 							</div>
 
@@ -897,10 +898,8 @@
 										<div class="col-lg-7 col-md-6">
 											<div class="form-field form-icon">
 												<span class="placeholder">Ваш комментарий <span class="form-star">*</span></span>
-												<span class="textarea">
-													<textarea class="form-input"></textarea>
-												</span>
 												
+												<textarea class="form-input"></textarea>
 												<span class="form-icon__el"><span class="icon-comment"></span></span>
 												<span class="smile-btn"><img src="img/smile.png" alt=""></span>
 											</div>
@@ -934,7 +933,7 @@
 												<div class="card__img" style="background-image: url('img/pr-img1.jpg')"></div>
 												<div class="card__body">
 													<div class="card__head">
-														<div class="card__title">Салат «Цезарь» традиционный</div>
+														<h6 class="card__title">Салат «Цезарь» традиционный</h6>
 													</div>
 												</div>
 											</a>
@@ -946,7 +945,7 @@
 												<div class="card__img" style="background-image: url('img/pr-img2.jpg')"></div>
 												<div class="card__body">
 													<div class="card__head">
-														<div class="card__title">Классический рецепт «Цезаря» с курицей</div>
+														<h6 class="card__title">Классический рецепт «Цезаря» с курицей</h6>
 													</div>
 												</div>
 											</a>
@@ -958,7 +957,7 @@
 												<div class="card__img" style="background-image: url('img/pr-img3.jpg')"></div>
 												<div class="card__body">
 													<div class="card__head">
-														<div class="card__title">Салат «Цезарь» по домашнему</div>
+														<h6 class="card__title">Салат «Цезарь» по домашнему</h6>
 													</div>
 												</div>
 											</a>
@@ -1035,138 +1034,323 @@
 	</footer>
 	<!-- FOOTER EOF   -->
 
-	<!-- <a href="#callback" class="block__link popup-open">Попап</a> -->
+	
 	
 	<div class="popup popup-rec ">
 		<div class="popup-container">
 			<div class="popup-content">
-				<div class="popup-w-close visible-sm">
-					<a href="#" class="btn btn--info btn--icon popup-close "><span class="icon-close"></span> Закрыть</a>
-				</div>
-				<div class="pr-steps pr-steps-slider">
-					<div class="pr-steps__item">
-						<div class="pr-steps__img">
-							<img src="img/p-img.jpg" alt="">
+				<div class="container">
+					<div class="ps-header visible-sm">
+						<div class="popup-w-close ">
+							<a href="#" class="btn btn--info btn--icon popup-close "><span class="icon-close"></span> <span class="hidden-sm">Закрыть</span></a>
 						</div>
-						<div class="pr-steps__sidebar">
-							<span>шаг</span>
-							<span>1</span>
-							<span>из 6</span>
-						</div>
-						<div class="pr-steps__content">
-							
-							<div class="pr-steps__body">
-								<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+					</div>
+					<div class="pr-steps pr-steps-slider">
+						<div class="pr-steps__item">
+							<div class="pr-steps__img">
+								<img src="img/p-img.jpg" alt="">
 							</div>
-							
-						</div>
-					</div>
-					<div class="pr-steps__item">
-						<div class="pr-steps__img">
-							<img src="img/p-img.jpg" alt="">
-						</div>
-						<div class="pr-steps__sidebar">
-							<span>шаг</span>
-							<span>2</span>
-							<span>из 6</span>
-						</div>
-						<div class="pr-steps__content">
-							
-							<div class="pr-steps__body">
-								<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+							<div class="pr-steps__sidebar">
+								<span>шаг</span>
+								<span>1</span>
+								<span>из 6</span>
 							</div>
-							
-						</div>
-					</div>
-					<div class="pr-steps__item">
-						<div class="pr-steps__img">
-							<img src="img/p-img.jpg" alt="">
-						</div>
-						<div class="pr-steps__sidebar">
-							<span>шаг</span>
-							<span>3</span>
-							<span>из 6</span>
-						</div>
-						<div class="pr-steps__content">
-							
-							<div class="pr-steps__body">
-								<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+							<div class="pr-steps__content">
+								
+								<div class="pr-steps__body">
+									<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+								</div>
+								
 							</div>
-							
 						</div>
-					</div>
-					<div class="pr-steps__item">
-						<div class="pr-steps__img">
-							<img src="img/p-img.jpg" alt="">
-						</div>
-						<div class="pr-steps__sidebar">
-							<span>шаг</span>
-							<span>4</span>
-							<span>из 6</span>
-						</div>
-						<div class="pr-steps__content">
-							
-							<div class="pr-steps__body">
-								<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+						<div class="pr-steps__item">
+							<div class="pr-steps__img">
+								<img src="img/p-img.jpg" alt="">
 							</div>
-							
-						</div>
-					</div>
-					<div class="pr-steps__item">
-						<div class="pr-steps__img">
-							<img src="img/p-img.jpg" alt="">
-						</div>
-						<div class="pr-steps__sidebar">
-							<span>шаг</span>
-							<span>5</span>
-							<span>из 6</span>
-						</div>
-						<div class="pr-steps__content">
-							
-							<div class="pr-steps__body">
-								<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+							<div class="pr-steps__sidebar">
+								<span>шаг</span>
+								<span>2</span>
+								<span>из 6</span>
 							</div>
-							
-						</div>
-					</div>
-					<div class="pr-steps__item">
-						<div class="pr-steps__img">
-							<img src="img/p-img.jpg" alt="">
-						</div>
-						<div class="pr-steps__sidebar">
-							<span>шаг</span>
-							<span>6</span>
-							<span>из 6</span>
-						</div>
-						<div class="pr-steps__content">
-							
-							<div class="pr-steps__body">
-								<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+							<div class="pr-steps__content">
+								
+								<div class="pr-steps__body">
+									<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+								</div>
+								
 							</div>
-							
+						</div>
+						<div class="pr-steps__item">
+							<div class="pr-steps__img">
+								<img src="img/p-img.jpg" alt="">
+							</div>
+							<div class="pr-steps__sidebar">
+								<span>шаг</span>
+								<span>3</span>
+								<span>из 6</span>
+							</div>
+							<div class="pr-steps__content">
+								
+								<div class="pr-steps__body">
+									<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+								</div>
+								
+							</div>
+						</div>
+						<div class="pr-steps__item">
+							<div class="pr-steps__img">
+								<img src="img/p-img.jpg" alt="">
+							</div>
+							<div class="pr-steps__sidebar">
+								<span>шаг</span>
+								<span>4</span>
+								<span>из 6</span>
+							</div>
+							<div class="pr-steps__content">
+								
+								<div class="pr-steps__body">
+									<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+								</div>
+								
+							</div>
+						</div>
+						<div class="pr-steps__item">
+							<div class="pr-steps__img">
+								<img src="img/p-img.jpg" alt="">
+							</div>
+							<div class="pr-steps__sidebar">
+								<span>шаг</span>
+								<span>5</span>
+								<span>из 6</span>
+							</div>
+							<div class="pr-steps__content">
+								
+								<div class="pr-steps__body">
+									<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+								</div>
+								
+							</div>
+						</div>
+						<div class="pr-steps__item">
+							<div class="pr-steps__img">
+								<img src="img/p-img.jpg" alt="">
+							</div>
+							<div class="pr-steps__sidebar">
+								<span>шаг</span>
+								<span>6</span>
+								<span>из 6</span>
+							</div>
+							<div class="pr-steps__content">
+								
+								<div class="pr-steps__body">
+									<p>Подготовить продукты. Креветки и яйцо заранее достать из холодильника, очистить и, при необходимости, удалить кишечную вену. Весь салат сполоснуть под холодной водой и обсушить.</p>
+								</div>
+								
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="sf-foot sf-foot--flex">
-					<div class="box-paging">
-						
+					<div class="sf-foot sf-foot--flex">
+						<div class="box-paging">
+							
+						</div>
+						<span class="sf-separate hidden-sm">
+							<a href="#" class="btn btn--info btn--icon popup-close"><span class="icon-close"></span> Закрыть</a>
+						</span>
 					</div>
-					<span class="sf-separate hidden-sm">
-						<a href="#" class="btn btn--info btn--icon popup-close"><span class="icon-close"></span> Закрыть</a>
-					</span>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<!-- <div class="popup popup-video">
+	<div class="popup popup-search ">
 		<div class="popup-container">
 			<div class="popup-content">
-				<div class="popup__close"></div>
-				<div class="popup-video__value"></div>
+				<div class="container">
+					<div class="ps-header">
+						<div class="ps-logo"><img src="img/logo.svg" alt=""></div>
+						<div class="popup-w-close ">
+							<a href="#" class="btn btn--info btn--icon popup-close "><span class="icon-close"></span> <span class="hidden-sm">Закрыть</span></a>
+						</div>
+					</div>
+	
+					<div class="ps-nav">
+						<form action="#">
+							<div class="ps-search">
+								<span class="placeholder"><span class="hidden-sm">Введите название рецепта для поиска</span><span class="visible-sm">Поиск</span></span>
+								<input type="text" class="ps-search__input form-input">
+								<button class="ps-search__btn btn btn--success btn--icon"><span class="icon-search"></span> <span class="hidden-sm">Поиск</span></button>
+							</div>
+						</form>
+						
+						<div class="ps-filter">
+							<div class="ps-filter__item">
+								<div class="filter ">
+									<div class="filter__button ">
+										<span class="filter__text">Ингредиенты</span>
+										<span class="filter__count">0</span>
+									</div>
+									<div class="filter__dropdown">
+										<ul class="filter__list">
+											<li>Картошка</li>
+											<li>2</li>
+											<li>Морква</li>
+											<li>Соус</li>
+											<li>Колбаса</li>
+											<li>Оливки</li>
+											<li>Лук</li>
+										</ul>
+										<div class="filter__search">
+											<input type="text" placeholder="Поиск по блюдам">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ps-filter__item">
+								<div class="filter">
+									<div class="filter__button ">
+										<span class="filter__text">Тип блюда</span>
+										<span class="filter__count">0</span>
+									</div>
+									<div class="filter__dropdown">
+										<ul class="filter__list">
+											<li>Аджика</li>
+											<li>Азу</li>
+											<li>Айран</li>
+											<li>Алкоголные</li>
+											<li>Ассорти</li>
+											<li>Аджика</li>
+											<li>Азу</li>
+											<li>Айран</li>
+											<li>Алкоголные</li>
+											<li>Ассорти</li>
+										</ul>
+										<div class="filter__search">
+											<input type="text" placeholder="Поиск по блюдам">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ps-filter__item">
+								<div class="filter">
+									<div class="filter__button ">
+										<span class="filter__text">Кухня</span>
+										<span class="filter__count">0</span>
+									</div>
+									<div class="filter__dropdown">
+										<ul class="filter__list">
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+										</ul>
+										<div class="filter__search">
+											<input type="text" placeholder="Поиск по блюдам">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ps-filter__item">
+								<div class="filter">
+									<div class="filter__button ">
+										<span class="filter__text">Время</span>
+										<span class="filter__count">0</span>
+									</div>
+									<div class="filter__dropdown">
+										<ul class="filter__list">
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+										</ul>
+										<div class="filter__search">
+											<input type="text" placeholder="Поиск по блюдам">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ps-filter__item">
+								<div class="filter">
+									<div class="filter__button ">
+										<span class="filter__text">Сложность</span>
+										<span class="filter__count">0</span>
+									</div>
+									<div class="filter__dropdown">
+										<ul class="filter__list">
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+										</ul>
+										<div class="filter__search">
+											<input type="text" placeholder="Поиск по блюдам">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+					</div>
+	
+					<section class="section pb0">
+						
+						<div class="section__head text-center">
+							<h2 class="section__title"><span class="sh-separate">Нашлись 3 рецепта</span></h2>
+						</div>
+						<div class="cards-wrap">
+							<div class="row">
+								<div class="col-lg-4 col-md-6">
+									<article class="card">
+										<a href="#" class="card__link">
+											<div class="card__img" style="background-image: url('img/card-img1.jpg')">
+												<span class="bd-tags">Выпечка</span>
+											</div>
+											<div class="card__body">
+												<div class="card__head">
+													<h6 class="card__title">Дрожжевой пирог с абрикосами рецепты в духовке</h6>
+												</div>
+											</div>
+										</a>
+									</article>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<article class="card">
+										<a href="#" class="card__link">
+											<div class="card__img" style="background-image: url('img/card-img2.jpg')">
+												<span class="bd-tags">Cалаты</span>
+											</div>
+											<div class="card__body">
+												<div class="card__head">
+													<h6 class="card__title">Овощной салат с сыром «Огни фейерверка»</h6>
+												</div>
+											</div>
+										</a>
+									</article>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<article class="card">
+										<a href="#" class="card__link">
+											<div class="card__img" style="background-image: url('img/img.jpg')">
+												<span class="bd-tags">Cалаты</span>
+											</div>
+											<div class="card__body">
+												<div class="card__head">
+													<h6 class="card__title">Новогодний Салат 2020 "Дед Мороз и Компания"</h6>
+												</div>
+											</div>
+										</a>
+									</article>
+								</div>
+							</div>	
+						</div>
+					</section>
+						
+				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 </div>
 <!-- BODY EOF   -->
@@ -1178,6 +1362,7 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jquery.overlayScrollbars.min.js"></script>
 <script src="js/custom.js?ver1.0"></script>
 
 </body>
